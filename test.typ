@@ -1,3 +1,5 @@
+#import "colors.typ": *
+
 #set page(fill: blue)
 
 
