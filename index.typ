@@ -1,6 +1,8 @@
 #import "colors.typ"
 
-#set page(fill: colors.blue, background: image("photos/bg.jpeg"))
+#let bgcolor = rgb(32, 32, 32)
+
+#set page(fill: bgcolor, background: image("photos/bg.jpeg"))
 #set text(font: "Kurinto Mono", size: 10pt, fill: colors.blue)
 #show link: it => underline(text(fill: colors.yellow, it))
 #show heading: it => align(text(size: 20pt, it), center)
