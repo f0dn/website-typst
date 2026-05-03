@@ -2,10 +2,20 @@
 
 #let bgcolor = rgb(32, 32, 32)
 
-#set page(fill: bgcolor, background: image("photos/bg.jpeg"))
 #set text(font: "Kurinto Mono", size: 10pt, fill: colors.blue)
 #show link: it => underline(text(fill: colors.yellow, it))
 #show heading: it => align(text(size: 20pt, it), center)
+#set page(
+  fill: bgcolor,
+  background: align(top, pad(image("photos/bg.jpeg"), top: 25%)),
+  height: 2000pt,
+  header: [
+    // github icon
+    #link("https://github.com/f0dn")[
+      #image("photos/github-mark-white.svg", width: 0.6cm, height: 0.6cm)
+    ]
+  ],
+)
 
 #grid(
   columns: 2,
@@ -22,6 +32,8 @@
   ],
 )
 
+#v(8%)
+
 = Projects
 
 #let project(body, name: none, link: none) = {
@@ -35,9 +47,17 @@
 }
 
 #grid(
-  columns: 2,
+  columns: 3,
   gutter: 3%,
   fill: colors.base,
+  project(name: "test project", link: "https://www.google.com")[this is a test project],
+  project(name: "number 2", link: "https://www.google.com")[this is a test project],
+  project(name: "test project", link: "https://www.google.com")[this is a test project],
+
+  project(name: "number 2", link: "https://www.google.com")[this is a test project],
+  project(name: "test project", link: "https://www.google.com")[this is a test project],
+  project(name: "number 2", link: "https://www.google.com")[this is a test project],
+
   project(name: "test project", link: "https://www.google.com")[this is a test project],
   project(name: "number 2", link: "https://www.google.com")[this is a test project],
 )
