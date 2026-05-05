@@ -103,11 +103,11 @@
 
 = About Me
 
-#box(
+#align(center, box(
   fill: colors.base,
   stroke: 0.05cm + colors.blue,
   inset: 0.2cm,
-)[
+)[#align(left)[
   I'm a computer science enthusiast who loves tinkering around with systems programming,
   compilers, and game development. I first discovered my passion for programming during
   the Covid-19 pandemic when I built a series of games with Unity and PyGame to keep
@@ -131,4 +131,4 @@
   Currently, I'm interested in a bunch of technologies, including rust, haskell, typst,
   and vim. On the non-cs side of things, I love playing chess and basketball, solving
   Rubik's cubes, and listening to music.
-]
+]])
