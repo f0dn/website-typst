@@ -9,7 +9,7 @@
 }
 
 #set text(font: "Kurinto Mono", size: 10pt, fill: colors.blue)
-#show link: it => underline(text(fill: colors.yellow, it))
+#show link: it => underline(it)
 #show heading: it => align(text(size: 20pt, it), center)
 #set page(
   fill: bgcolor,
@@ -31,7 +31,7 @@
       link("https://linkedin.com/in/flint-mueller")[
         #color_svg("assets/linkedin.svg", colors.blue)
       ],
-      link("https://github.com/f0dn")[
+      link("TODO ADD RESUME HERE")[
         #color_svg("assets/resume.svg", colors.blue)
       ],
     ))
@@ -43,86 +43,79 @@
   gutter: 1cm,
   align: horizon,
   [
-    #box(clip: true, stroke: 0.1cm + colors.blue, radius: 10cm)[
-      #image("assets/me.png", width: 3cm, height: 5cm)
+    #box(
+      inset: (top: 0.3cm, left: 0.05cm),
+      fill: colors.text,
+      clip: true,
+      stroke: 0.1cm + colors.blue,
+      radius: 10cm,
+    )[
+      #image("assets/me.png", width: 3.5cm, height: 5cm)
     ]
   ],
   [
     #set text(size: 20pt)
-    Hi, I'm flint i go to stony and its very cool also heres a picture of me
+    Hi, I'm Flint, a sophomore studying computer science at Stony Brook University.
   ],
 )
 
 #v(5cm)
 
-= Projects
+= Top Projects
 
-#let project(body, name: none, link: none) = {
-  box(inset: 0.3cm)[
-    #align(center)[
-      #name \
-      #link \
-      #body
-    ]
+#v(0.5cm)
+
+#let project(body, name: str, url: str) = {
+  align(center)[
+    #link(url)[
+      #name
+    ] \
+    #body
   ]
 }
 
 #grid(
+  inset: 0.3cm,
+  stroke: 0.05cm + colors.blue,
   columns: 3,
   gutter: 0.4cm,
   fill: colors.base,
-  project(name: "test project", link: "https://www.google.com")[this is a test project],
-  project(name: "number 2", link: "https://www.google.com")[this is a test project],
-  project(name: "test project", link: "https://www.google.com")[this is a test project],
-
-  project(name: "number 2", link: "https://www.google.com")[this is a test project],
-  project(name: "test project", link: "https://www.google.com")[this is a test project],
-  project(name: "number 2", link: "https://www.google.com")[this is a test project],
-
-  project(name: "test project", link: "https://www.google.com")[this is a test project],
-  project(name: "number 2", link: "https://www.google.com")[this is a test project],
+  project(name: "Razor", url: "https://github.com/f0dn/razor")[
+    Custom build compiler written in rust
+  ],
+  project(name: "This Website", url: "TODO PUT URL")[
+    My personal portfolio written in typst
+  ],
+  project(name: "Trinity", url: "https://github.com/f0dn/chess")[
+    Experimental chess engine to play around with bitboards and search algorithms
+  ],
 )
 
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
-dsakj\
+#align(center)[
+  #box(
+    fill: colors.base,
+    stroke: 0.05cm + colors.blue,
+    inset: 0.2cm,
+  )[
+    #link("something")[See More]
+  ]
+]
+
+= About Me
+
+#box(
+  fill: colors.base,
+  stroke: 0.05cm + colors.blue,
+  inset: 0.2cm,
+)[
+  whole lot of yapping here im such a cool guy and i love coding and programming and i have
+  all these projects that I work on.
+  whole lot of yapping here im such a cool guy and i love coding and programming and i have
+  all these projects that I work on.
+  whole lot of yapping here im such a cool guy and i love coding and programming and i have
+  all these projects that I work on.
+  whole lot of yapping here im such a cool guy and i love coding and programming and i have
+  all these projects that I work on.
+  whole lot of yapping here im such a cool guy and i love coding and programming and i have
+  all these projects that I work on.
+]
