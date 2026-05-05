@@ -128,7 +128,7 @@
   students through building their own chess engine from scratch through the Stony Brook
   Computing Society's Project Quack.
 
-  Currently, I'm interested in a bunch of technologies, including rust, haskell, typst,
-  and vim. On the non-cs side of things, I love playing chess and basketball, solving
+  Currently, I'm interested in a bunch of technologies, including Rust, Haskell, Typst,
+  and Vim. On the non-cs side of things, I love playing chess and basketball, solving
   Rubik's cubes, and listening to music.
 ]])
