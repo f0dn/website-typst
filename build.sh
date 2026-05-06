@@ -3,4 +3,4 @@ python3 build.py \
     --title "Flint Mueller" \
     --favicon "assets/aura.jpeg" \
     index.typ \
-    index.html
+    ../index.html

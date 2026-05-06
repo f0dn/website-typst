@@ -8,7 +8,7 @@
   image(bytes(colored_svg))
 }
 
-#set text(font: "Kurinto Mono", size: 10pt, fill: colors.blue)
+#set text(font: "DejaVu Sans Mono", size: 10pt, fill: colors.blue)
 #show link: it => underline(it)
 #show heading: it => align(text(size: 20pt, it), center)
 #set page(
